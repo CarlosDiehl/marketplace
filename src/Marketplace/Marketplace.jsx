@@ -58,10 +58,10 @@ export default function Marketplace() {
                 </p>
                 <div className="selector">
                   <button onClick={changeToBuy} className="button">
-                    Buy Orders
+                    Buy Crypto
                   </button>
                   <button onClick={changeToSell} className="button">
-                    Sell Orders
+                    Sell Crypto
                   </button>
                 </div>
               </div>
