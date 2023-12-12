@@ -1,0 +1,76 @@
+@import url("https://fonts.cdnfonts.com/css/mona-sans");
+
+body {
+  background-color: #F3F3F3;
+  color: #000000;
+}
+button {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 100px;
+  padding: 18px 18px;
+  font-weight: 700;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-family: "Mona-Sans", sans-serif;
+  line-height: 1.15;
+  -webkit-tap-highlight-color: 1a1125;
+}
+
+h1 {
+  font-size: 40px;
+}
+.container {
+  margin: 50px;
+}
+
+.selector {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+table {
+  background-color: #ffffff;
+  font-family: "Mona-Sans", sans-serif;
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+  table-layout: auto;
+  border-collapse: collapse;
+  border: #F2F2F2 1px solid;
+  border-radius: 0.75rem;
+  padding: 17px 20px;
+}
+
+th {
+  font-size: 16px;
+  padding: 16px 4px 32px 32px;
+  border-bottom: 1px #000000 solid;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px #F2F2F2 solid;
+}
+
+tbody tr:hover {
+  background-color: #F2F2F2;
+}
+
+p {
+  color: grey;
+}
