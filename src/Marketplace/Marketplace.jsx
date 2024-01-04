@@ -54,7 +54,9 @@ export default function Marketplace() {
               <div className="card-header">
                 <h1>P2P</h1>
                 <p className="text-text-heading-gray text-base mt-4">
-                P2P by paydece.io to Fuse, paydece P2P is a decentralized crypto to fiat marketplace with a Smart Contract Escrow users ramp on to defi.
+                  P2P by paydece.io to Fuse, paydece P2P is a decentralized
+                  crypto to fiat marketplace with a Smart Contract Escrow users
+                  ramp on to defi.
                 </p>
                 <div className="selector">
                   <button onClick={changeToBuy} className="button">
@@ -83,21 +85,30 @@ export default function Marketplace() {
                       <tbody>
                         {buyOrders.map((item) => (
                           <tr key={item.hash}>
-                            <td>{item.buyer.wallet}</td>
                             <td>
-                              {item.fiatPrice} {item.fiatCoin.symbol}
+                              <div>
+                              <h3>{item.buyer.wallet}</h3>
+                                <h4>Total Trasactions: {item.buyer.userScoring.totalTransaction}</h4>
+                                <h4>Positive Opinions: {item.buyer.userScoring.positiveOpinions} ({item.buyer.userScoring.positiveOpinionPercentage}%)</h4>
+                              </div>
                             </td>
-                            <td>{item.paymentMethods}</td>
                             <td>
+                            <h4>{item.fiatPrice} {item.fiatCoin.symbol}</h4>
+                            </td>
+                            <td><h4>{item.paymentMethods}</h4></td>
+                            <td><h4>
                               {item.fromAmountRange.toFixed()}{" "}
                               {item.fiatCoin.symbol} -{" "}
                               {item.toAmountRange.toFixed()}{" "}
                               {item.fiatCoin.symbol}
+                              </h4>
                             </td>
                             <td>
-                              {item.amount.toFixed()} {item.crypto.symbol}
+                            <h4>{item.amount.toFixed()} {item.crypto.symbol}</h4>
                             </td>
-                            <td>{item.crypto.blockchain.description}</td>
+                            <td>
+                            <h4>{item.crypto.blockchain.description}</h4>
+                              </td>
                             <td>
                               <a
                                 target="_blank"
